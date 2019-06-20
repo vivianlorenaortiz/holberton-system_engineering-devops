@@ -1,4 +1,2 @@
 #!/bin/bash
-gcc -S mansm=intel $CFILE
-
-
+gcc -S -masm=intel $CFILE
