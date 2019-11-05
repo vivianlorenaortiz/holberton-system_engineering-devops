@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# displays a list of currently running processes.
-
-ps auxf -e --forest
+#  script is displaying the PID of the current process
+ps axu -e --forest
