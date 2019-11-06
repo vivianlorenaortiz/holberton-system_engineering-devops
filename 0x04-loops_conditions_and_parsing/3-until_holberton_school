@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# prints "Holberton School" 
+# prints "Holberton School" 10 times
 
 counter=1
 until [ $counter -gt 10 ]
-do
-    echo "Holberton School"
-    ((counter++))
-don
+do echo "Holberton School"
+   counter=$((counter+1))
+done
