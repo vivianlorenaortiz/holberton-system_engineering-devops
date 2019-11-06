@@ -9,7 +9,7 @@ do
     while [ $minutes -le 59 ]
     do
 	echo $minutes
-	minutes=$((minutes++))
+	minutes=$((minutes+1))
     done
-    minutes=$((hours++))
+    minutes=$((hours+1))
 done
