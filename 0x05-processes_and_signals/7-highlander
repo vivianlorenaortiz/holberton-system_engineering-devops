@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#  "To infinity and beyond" indefinitely and "I am invincible!! "
+# "To infinity and beyond" indefinitely and "I am invincible!! "
 
 trap "echo I am invincible!!!" SIGTERM
 while true
