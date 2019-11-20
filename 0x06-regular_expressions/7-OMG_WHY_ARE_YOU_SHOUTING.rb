@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-#regular expressions
-puts  ARGV [0].scan(/[AZ]+/).join
+#The regular expression must be only matching: capital letters
+puts ARGV[0].scan(/[A-Z]/).join
