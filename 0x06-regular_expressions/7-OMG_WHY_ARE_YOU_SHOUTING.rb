@@ -1,2 +1,3 @@
-# ! / usr / bin / env ruby
-pone  ARGV [ 0 ] .scan ( / [AZ] + / ) .join
+#!/usr/bin/env ruby
+#regular expressions
+puts  ARGV [ 0 ] .scan ( / [AZ] + / ) .join
