@@ -3,5 +3,5 @@
 exec { 'pkill':
   command   => ' pkill "killmenow" ',
   provider => ' shell ',
-  onlyif => '/usr/bin/test -e /path/to/file/test.txt',
+  path => '/bin'
 }
