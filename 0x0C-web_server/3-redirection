@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Bash ssh script that configures a new Ubuntu machine to respect above requirements
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo sed -i "26 i\ rewrite ^/redirect_me www.google.com permanent;" /etc/nginx/sites-available/default
+sudo service nginx restart
