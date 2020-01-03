@@ -3,11 +3,11 @@
 
 #Install HAproxy 1.5
 sudo apt update
-sudo apt install -y haproxy=1.5\*
+sudo apt install -y haproxy=1.6\*
 sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
 
 #HAproxy of config files
-frontend "http_front
+"frontend http_front
    bind *:80
    mode http
    default_backend http_back
