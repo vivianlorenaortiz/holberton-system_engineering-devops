@@ -2,7 +2,6 @@
 # Using what you did for task #1, make your fix short and sweet.
 pkill -f apache2
 chown nginx:nginx /etc/nginx/nginx.conf
-chmod 700 etc/nginx/nginx.conf
 chmod 775 /etc/nginx/nginx.conf
 sed -i 's/80/8080/' /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
