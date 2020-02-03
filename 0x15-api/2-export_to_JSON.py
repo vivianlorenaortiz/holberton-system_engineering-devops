@@ -15,12 +15,12 @@ if __name__ == '__main__':
     username = user.get('username')
     tasks = []
     for task in todo:
-        task_dict = {}
-        task_dict["task"] = task.get('title')
-        task_dict["completed"] = task.get('completed')
-        task_dict["username"] = username
-        tasks.append(task_dict)
-    jsonobj = {}
-    jsonobj[user_id] = tasks
+        current = {}
+        current["task"] = task.get('title')
+        current["completed"] = task.get('completed')
+        current["username"] = username
+        tasks.append(current)
+    json_task = {}
+    json_task[user_id] = tasks
     with open("{}.json".format(user_id), 'w') as jsonfile:
-        json.dump(jsonobj, jsonfile)
+        json.dump(json_task, jsonfile)
