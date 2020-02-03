@@ -1,7 +1,5 @@
 #!/usr/bi/python3
-"""
-Dictionary of list of dictionaries
-"""
+""" Dictionary of list of dictionaries """
 
 import json
 import requests
@@ -21,7 +19,7 @@ if __name__ == "__main__":
     for task in todo:
         task_dict = {}
         task_dict['task'] = task.get('title')
-        task_dict['completed'] = task.get('complete')
+        task_dict['completed'] = task.get('completed')
         task_dict['username'] = username
         all_task.append(task_dict)
     json_task = {}
