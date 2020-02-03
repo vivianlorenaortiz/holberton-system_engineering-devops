@@ -7,10 +7,9 @@ import json
 import requests
 from sys import argv
 
-def export_json(user_id):
-    """
-    Export to JSON
-    """
+
+if __name__ == "__main__":
+
     user_id = argv[1]
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(user_id)).json()
@@ -19,7 +18,7 @@ def export_json(user_id):
 
     username = user.get('username')
     all_task = []
-    for task  in todo:
+    for task in todo:
         task_dict = {}
         task_dict['task'] = task.get('title')
         task_dict['completed'] = task.get('complete')
@@ -29,6 +28,3 @@ def export_json(user_id):
     json_task[user_id] = all_task
     with open("{}.json".format(user_id), 'w') as jsonfile:
         json.dump(json_task, jsonfile)
-
-if __name__ == "__main__":
-     export_json(int(argv[1]))
