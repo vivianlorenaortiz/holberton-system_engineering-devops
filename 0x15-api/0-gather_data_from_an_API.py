@@ -10,7 +10,7 @@ from sys import argv
 
 def get_information(employee_id):
     """
-    return get info 
+    return get info
     """
 
     user_id = argv[1]
